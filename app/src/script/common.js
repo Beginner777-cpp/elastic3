@@ -118,13 +118,22 @@ class Slider {
                     if (this.change > 0 && this.activePage > 0) {
                         this.pages[this.activePage].style.transition = '0s';
                         this.pages[this.activePage - 1].style.transition = '0s';
-                        this.pages[this.activePage].style.transform = `translateY(${this.change}px)`
-                        this.pages[this.activePage - 1].style.transform = `translateY(${this.change}px)`
+                        for (let j = 0; j < this.pages.length; j++) {
+                            // this.pages[j].style.transform = `translateY(${this.change}px)`;
+                            this.pages[j].style.transform = `translateY(${-(this.activePage + 1) * this.change}px)`;
+                        }
+                        // this.pages[this.activePage].style.transform = `translateY(${this.change}px)`
+                        // this.pages[this.activePage - 1].style.transform = `translateY(${this.change}px)`
                     } else if (this.change < 0 && this.activePage < this.pages.length - 1) {
                         this.pages[this.activePage].style.transition = '0s';
                         this.pages[this.activePage + 1].style.transition = '0s';
-                        this.pages[this.activePage].style.transform = `translateY(${this.change}px)`
-                        this.pages[this.activePage + 1].style.transform = `translateY(${this.change}px)`
+                        for (let j = 0; j < this.pages.length; j++) {
+                            // this.pages[j].style.transform = `translateY(${this.change}px)`;
+                            this.pages[j].style.transform = `translateY(${-(this.activePage - 1) * this.change}px)`;
+
+                        }
+                        // this.pages[this.activePage].style.transform = `translateY(${this.change}px)`
+                        // this.pages[this.activePage + 1].style.transform = `translateY(${this.change}px)`
                     } else {
 
                     }
@@ -148,6 +157,7 @@ class Slider {
                                 this.pages[this.activePage - 1].style.transition = '1s';
                                 this.pages[this.activePage].style.transform = 'translateY(0)';
                                 this.pages[this.activePage - 1].style.transform = `translateY(${-this.pageHeight}px)`;
+
                             }
                         }
                     }
