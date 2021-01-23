@@ -1,0 +1,320 @@
+@for $i from 1 through 10 {
+    .page#{$i} {
+        background: url('../images/page#{$i}_bg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-position-y: 20%;
+    }
+}
+@for $i from 2 through 10 {
+    .page#{$i} {
+        padding: 31px 41px;
+    }
+}
+
+.page_layover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.page2_layover {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.69) 100%);
+}
+
+.page3_layover {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.44) 100%);
+}
+
+.page4_layover {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.page5_layover {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.page6_layover {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.page7_layover {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.page8_layover {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.page9_layover {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.page10_layover {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.page11 {
+    background: black;
+}
+
+.page_inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 1;
+}
+
+.page_contacts {
+    display: flex;
+}
+
+.page_contacts_link {
+    margin-left: 37px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.page_inner_content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    max-width: 505px;
+}
+
+.page_text {
+    font-family: 'OpenSans-SemiBold';
+    font-size: 40px;
+    line-height: 54px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-bottom: 38px;
+    margin-top: 10px;
+}
+
+.book_btn {
+    font-family: 'OpenSans-SemiBold';
+    font-size: 30px;
+    line-height: 41px;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 56px;
+    padding: 18px 45px;
+    background: #CCAF40;
+    transition: 0.5s;
+}
+
+.book_btn:hover {
+    color: #CCAF40;
+    background: transparent;
+    border: 2px solid #CCAF40;
+}
+
+.view_btn {
+    margin: 0 auto;
+    font-family: 'OpenSans-Regular';
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.view_btn:hover {
+    cursor: pointer;
+}
+
+.page2_inner {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #CCAF40;
+    padding: 0 40px;
+    z-index: 1;
+}
+
+.page2_inner_content {
+    margin-top: 10%;
+    padding: 0 33px;
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid #CCAF40;
+    max-width: 500px;
+}
+
+.page2_title {
+    font-family: 'OpenSans-SemiBold';
+    font-size: 72px;
+    line-height: 98px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.page2_title::before {
+    content: '';
+    width: 198px;
+    height: 3px;
+    background: #CCAF40;
+    display: block;
+}
+
+.page2_text {
+    font-family: 'OpenSans-Light';
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.page3_inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.page3_inner_content {
+    text-align: right;
+    border-right: 3px solid #CCAF40;
+    border-left: none;
+}
+
+.page3_title {
+    align-items: flex-end;
+}
+
+.page3_inner_content {
+    margin-top: 15%;
+}
+
+.page4_inner_content {
+    margin-top: 7%;
+}
+
+.page5_inner_content {
+    margin-top: 7%;
+}
+
+.page6_inner_content {
+    margin-top: 7%;
+}
+
+.page7_inner_content {
+    margin-top: 7%;
+}
+
+.page8_inner_content {
+    margin-top: 25%;
+}
+
+.page9_inner_content {
+    margin-top: 20%;
+}
+
+.page10_inner_content {
+    margin-top: 10%;
+}
+
+.page11_container {
+    max-width: 1110px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back_btn {
+    font-family: 'OpenSans-Regular';
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.back_btn:hover {
+    cursor: pointer;
+}
+
+.page11_inner {
+    display: flex;
+
+}
+
+.page11_item {
+    padding: 0 45px;
+}
+
+.page11_item:nth-of-type(2) {
+    border-left: 3px solid #CCAF40;
+    border-right: 3px solid #CCAF40;
+}
+
+.page11_number {
+    font-family: 'OpenSans-Bold';
+    font-size: 64px;
+    line-height: 87px;
+    color: #FFFFFF;
+}
+
+.page11_text {
+    font-family: 'OpenSans-Regular';
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.footer_btn {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.look_btn {
+    font-family: 'OpenSans-SemiBold';
+    font-size: 30px;
+    line-height: 41px;
+    width: fit-content;
+    padding: 19px 26px;
+    color: #FFFFFF;
+    background: #CCAF40;
+    border-radius: 10px;
+    margin: 30px 33px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    border: 2px solid transparent;
+}
+.look_btn:hover{
+    cursor: pointer;
+    color: #CCAF40;
+    background: transparent;
+    border: 2px solid #CCAF40;
+}
+.look_btn:hover i::before{
+    transition: 0.5s;
+    color: #CCAF40;
+}

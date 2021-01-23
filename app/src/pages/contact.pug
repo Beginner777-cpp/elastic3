@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet" href="../styles/main.min.css")
+    body
+        header.header.book_header
+            .container
+                nav.header_nav
+                    a.logo(href="../index.html")
+                        img(src="../images/logo.webp" alt="")
+                    a.header_burger(href="#!")
+                        span
+                    ul.header_nav_list
+                        li
+                            a.header_list_link(href="../index.html") Home
+                        li
+                            a.header_list_link(href="book.html") Book
+                        li 
+                            a.header_list_link.active(href="contact.html") Contact
+                        li
+                            a.header_list_link(href="about.html") About
+        main.contact_main  
+            .container.contact_content
+                .contact_left
+                    .contact_logo
+                        img(src="../images/logo_large.webp" class="contact_logo-img" alt="")
+                    ul.page_contacts
+                        li
+                            a(class="page_contacts_link" href="#!")
+                                i(class="fab icon-behanse")
+                        li
+                            a(class="page_contacts_link" href="#!")
+                                i(class="fab icon-facebook")
+                        li
+                            a(class="page_contacts_link" href="#!")
+                                i(class="fab icon-insta")
+                .contact_right
+                    .contact_title Contact-us
+                    form.contact_form(action="")
+                        label(for="contact_name") Name
+                        input(type="text" id="contact_name" placeholder="Enter your name" required)
+                        label(for="contact_email") Email Address
+                        input(type="email" id="contact_email" placeholder="Enter your email addres" required)
+                        label(for="") Message
+                        textarea(name="" id="contact_message")
+                        .submit_div
+                            p.submit_text We will get back to you within one business day
+                            a.submit_btn(href="#!") Submit
+                    .contacts_bottom
+                        a.contact_phone(href="tel: (234) 305-738-8420") (234) 305-738-8420
+                            i(class="fas icon-phone")
+                        a.contact_address(href="http://maps.google.com/?q=1287 Steve Hunt Road, Florida") 1287 Steve Hunt Road, Florida
+                            i(class="fas icon-location")
+                        a.contact_mail(href="mailto: info@elastic-studios.com") info@elastic-studios.com
+                            i(class="fas icon-mail")
+        script(src="../script/contact.js")

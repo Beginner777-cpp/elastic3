@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet" href="../styles/main.min.css")
+    body
+        header.header.book_header
+            .container
+                nav.header_nav
+                    a.logo(href="../index.html")
+                        img(src="../images/logo.webp" alt="")
+                    a.header_burger(href="#!")
+                        span
+                    ul.header_nav_list
+                        li
+                            a.header_list_link(href="../index.html") Home
+                        li
+                            a.header_list_link.active(href="book.html") Book
+                        li 
+                            a.header_list_link(href="contact.html") Contact
+                        li
+                            a.header_list_link(href="about.html") About
+        main.book_main
+            form.book_form(action="")
+                h1.book_title Welcome to the booking page!
+                p.book_text Kindly provide necessary informations by attending to the questions below.
+                section.book_options
+                    h1.options_title What you booking for? 
+                    p.options_text (you can select multiple options)
+                    .options_items
+                        -var options = ['Engagement', 'Business event', 'Wedding', 'Birthday', 'Maternity', 'Graduation', 'Product','Honeymoon','Fashion','Anniversary','Food','Conference','Team and workspace','Personal Potrait','Family','Travel shoot','Baby','Others']
+                            each i in options
+                                .checkbox_div
+                                    input(type="checkbox" id=`${i}` class="checkbox")
+                                    label(for=`${i}` class="checkbox_text")=i
+                section.book_date
+                    h1.date_title When and where is the photoshoot?
+                    .date_inputs
+                        .date_input
+                            input(type="text" id="date" placeholder="Select date" required onfocus="(this.type='date')" 
+                            onblur="(this.type='text')") 
+                            label(for="date") Date
+                        .date_input
+                            input(type="text" id="time" placeholder="Select time" required onfocus="(this.type='time')" 
+                            onblur="(this.type='text')")
+                            label(for="time") Time
+                        .date_input
+                            input(type="text" id="address" placeholder="Enter the location address")
+                            label(for="address") Address
+
+                section.book_packages
+                    h1.packages_title Select your preffered package
+                    .packages_items
+                        .packages_item
+                            h1.packages_item-title Basic
+                            .price 
+                                img(src="../images/currency.webp" alt="")
+                                |30,000
+                            .packages_text 1 hour shoot
+                            .packages_text Unlimited photos
+                            .packages_text Editing included
+                            a(href="#!" class="select_btn" text="Basic") Select
+                        .packages_item
+                            h1.packages_item-title Standard
+                            .price 
+                                img(src="../images/currency.webp" alt="")
+                                |50,000
+                            .packages_text 1 hour shoot
+                            .packages_text Unlimited photos
+                            .packages_text Editing included
+                            a(href="#!" class="select_btn" text="Standard") Select
+                        .packages_item
+                            h1.packages_item-title Premium
+                            .price 
+                                img(src="../images/currency.webp" alt="")
+                                |80,000
+                            .packages_text 1 hour shoot
+                            .packages_text Unlimited photos
+                            .packages_text Editing included
+                            a(href="#!" class="select_btn" text="Premium") Select
+                section.book_date
+                    h1.date_title Kindly provide your contact details
+                    .date_inputs
+                        .date_input
+                            input(type="text" id="name" placeholder="Enter full name" required)
+                            label(for="name") Name
+                        .date_input
+                            input(type="tel" id="phone" placeholder="Enter phone number" required)
+                            label(for="phone") Phone number
+                        .date_input
+                            input(type="email" id="email" placeholder="Enter email address" required)
+                            label(for="email") Email
+                .book_btns
+                    a.book_btn(href="#!" id="book_now") Book now 
+                    a.book_btn.bookLater_btn(href="#!" id="book_later") Save and book later
+        script(src="../script/book.js")

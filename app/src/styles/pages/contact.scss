@@ -1,0 +1,112 @@
+.contact_main {
+    background: black;
+    padding-top: 264px;
+    padding-bottom: 109px;
+}
+
+.contact_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact_logo {
+    margin-bottom: 76px;
+}
+
+.contact_logo-img {}
+
+.contact_right {
+    max-width: 570px;
+}
+
+.contact_title {
+    font-family: 'OpenSans-Regular';
+    font-size: 64px;
+    line-height: 87px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.contact_form{
+    width: 100%;
+}
+.contact_form label {
+    font-family: 'OpenSans-Regular';
+    font-size: 25px;
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.contact_form input {
+    margin: 0;
+    width: 100%;
+    height: 78px;
+    background: none;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.contact_form textarea {
+    width: 100%;
+    height: 352px;
+    background: none;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.submit_div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 127px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.submit_text {
+    font-family: 'OpenSans-Regular';
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    max-width: 337px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+}
+
+.submit_btn {
+    font-family: 'OpenSans-SemiBold';
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+    background: #CCAF40;
+    border-radius: 5px;
+    padding: 19px 44px;
+    display: inline-block;
+}
+.contacts_bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.contacts_bottom a{
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'OpenSans-Regular';
+    font-size: 20px;
+    text-align: right;
+}
+.contacts_bottom a i{
+    margin-left: 15px;
+}

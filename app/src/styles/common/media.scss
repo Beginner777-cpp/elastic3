@@ -1,0 +1,496 @@
+@media(max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .book_form {
+        max-width: 960px
+    }
+
+    .date_input input {
+        width: 100%;
+    }
+
+    .contact_logo-img {
+        max-width: 225px;
+    }
+}
+
+@media(max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .book_form {
+        max-width: 720px
+    }
+
+    .header_list_link {
+        margin-left: 20px;
+    }
+
+    .page_text {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .page_inner_content {
+        max-width: 380px;
+    }
+
+    .book_btn {
+        padding: 15px 30px;
+    }
+
+    .look_btn {
+        padding: 15px 20px;
+    }
+
+    .page11_number {
+        font-size: 50px;
+    }
+
+    .page11_text {
+        font-size: 20px;
+    }
+
+    .date_input {
+        margin: 0 15px;
+    }
+
+    .date_inputs {
+        margin-bottom: 50px;
+    }
+
+    .options_items {
+        margin-bottom: 50px;
+    }
+
+    .checkbox_text {
+        padding: 7px 20px;
+    }
+
+    .packages_item {
+        padding: 22px 40px;
+    }
+
+
+    .contact_main {
+        padding-top: 150px;
+    }
+
+    .contact_right {
+        max-width: unset;
+        width: 60%;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .book_form {
+        max-width: 540px
+    }
+
+    .page2_inner {
+        padding: 0 35px;
+    }
+
+    .page2_title {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .page2_text {
+        font-size: 20px;
+    }
+
+    .page2_title::before {
+        width: 150px;
+    }
+
+    .page11_item {
+        padding: 0 20px;
+    }
+
+    .page2_inner_content {
+        padding: 0 20px;
+        margin-top: 15%;
+    }
+
+    .look_btn {
+        font-size: 20px;
+        padding: 10px 15px;
+        margin: 20px 23px;
+    }
+
+    .packages_item {
+        padding: 15px 20px;
+    }
+
+    .packages_item-title {
+        font-size: 18px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .price img {
+        width: 18px;
+    }
+
+    .packages_text {
+        font-size: 14px;
+    }
+
+    .select_btn {
+        padding: 7px 20px;
+        margin-top: 30px;
+    }
+
+    .book_btns {
+        padding-bottom: 50px;
+    }
+
+    .book_btns .book_btn {
+        font-size: 25px;
+        line-height: 30px;
+        padding: 14px 25px;
+    }
+
+    .book_main {
+        padding-top: 100px;
+    }
+
+    .book_title {
+        font-size: 30px;
+    }
+
+    .book_text {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .contact_logo-img {
+        max-width: 150px;
+    }
+
+    .page_contacts_link {
+        margin-left: 15px;
+    }
+
+    .contact_title {
+        font-size: 50px;
+    }
+
+    .contact_form input {
+        height: unset;
+    }
+
+    .contact_form textarea {
+        height: 250px;
+    }
+
+    .submit_text {
+        margin-right: 0;
+    }
+
+    .contacts_bottom a {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .about_text {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .header_burger {
+        display: block;
+    }
+
+    .header_nav_list {
+        background: black;
+        flex-direction: column;
+        position: absolute;
+        right: 10%;
+        top: -400%;
+        padding-right: 20px;
+    }
+
+    .header_list_link {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 576px) {
+    .header_list_link {
+        font-size: 15px;
+    }
+
+    .page_inner_content {
+        max-width: 300px;
+    }
+
+    .page_text {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .book_btn {
+        padding: 10px 15px;
+        font-size: 25px;
+    }
+
+    .view_btn {
+        font-size: 20px;
+    }
+
+    .page11_inner {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .page11_item {
+        border: none;
+        width: 90%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .page11_item:nth-of-type(2) {
+        border: none;
+        border-bottom: 3px solid #CCAF40;
+        border-top: 3px solid #CCAF40;
+    }
+
+    .footer_btn {
+        margin-top: 10px;
+    }
+
+    .page11_number {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .back_btn {
+        margin-bottom: 25px;
+        line-height: 20px;
+        font-size: 20px;
+    }
+
+    .page11 {
+        align-items: flex-end;
+        padding-bottom: 50px;
+    }
+
+    .checkbox_div {
+        margin: 0 10px;
+        margin-bottom: 15px;
+    }
+
+    .checkbox_text {
+        font-size: 15px;
+        padding: 5px 15px;
+    }
+
+    .date_inputs {
+        flex-wrap: wrap;
+    }
+
+    .date_input {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .packages_items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .packages_item {
+        width: 70%;
+        margin-bottom: 20px;
+
+    }
+
+    .book_btns {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .book_btns .book_btn {
+        font-size: 20px;
+        line-height: 20px;
+        padding: 10px 20px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact_logo-img {
+        max-width: 80px;
+    }
+
+    .icon-behanse::before {
+        font-size: 15px;
+    }
+
+    .page_contacts_link {
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+    }
+
+    .contact_title {
+        font-size: 40px;
+    }
+
+    .contact_form label {
+        font-size: 20px;
+    }
+
+    .contact_form input {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    .submit_text {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .submit_div .submit_btn {
+        font-size: 20px;
+        line-height: 25px;
+        padding: 10px 25px;
+    }
+
+    .submit_div {
+        justify-content: center;
+    }
+
+    .about_text {
+        font-size: 25px;
+        line-height: 28px;
+    }
+}
+
+@media(max-width: 470px) {
+    .logo img {
+        max-width: 100px;
+    }
+
+    .header_list_link {
+        margin-left: 10px;
+    }
+
+    .page_text {
+        font-size: 20px;
+        max-width: 250px;
+    }
+
+    .book_btn {
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+
+    .view_btn {
+        font-size: 15px;
+    }
+
+    .page2_inner {
+        padding: 0 10px;
+    }
+
+    .page2_inner_content {
+        padding: 0 15px;
+        margin-top: 25%;
+    }
+
+    .page2_title {
+        font-size: 40px;
+    }
+
+    .page2_text {
+        font-size: 15px;
+    }
+
+    .look_btn {
+        margin: 15px 18px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .page11 {
+        padding: 0;
+        align-items: center;
+    }
+
+    .page11_container {
+        padding: 0 25px;
+    }
+
+    .page11_item {
+        width: 100%;
+    }
+
+    .page11_number {
+        font-size: 30px;
+    }
+
+    .page11_text {
+        font-size: 15px;
+    }
+
+    .back_btn {
+        margin-bottom: 15px;
+    }
+
+    .icon-arrowRight::before {
+        font-size: 15px;
+        line-height: 20px;
+        margin-left: 15px;
+    }
+
+    .about_text {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+@media(max-width: 400px) {
+    .contact_main {
+        padding-top: 100px;
+    }
+
+    .contact_title {
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 35px;
+    }
+
+    .contact_form input {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+
+    .submit_div {
+        margin-bottom: 50px;
+    }
+
+    .contacts_bottom a {
+        font-size: 13px;
+    }
+
+    .about_text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}

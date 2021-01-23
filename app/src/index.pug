@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="preload" href="images/page1_bg.webp", as = "image" crossorigin="anonymous")
+        link(rel="preload" href="fonts/Open_Sans/OpenSans-Bold.woff2", as = "font" crossorigin="anonymous")
+        link(rel="preload" href="fonts/Open_Sans/OpenSans-Light.woff2", as = "font" crossorigin="anonymous")
+        link(rel="preload" href="fonts/Open_Sans/OpenSans-SemiBold.woff2", as = "font" crossorigin="anonymous")
+        link(rel="preload" href="fonts/Open_Sans/OpenSans-Regular.woff2", as = "font" crossorigin="anonymous")
+        link(rel="stylesheet" href="styles/main.min.css")
+        title Document
+    body.main_body
+        include view/header.pug
+        include view/main.pug
+        include view/footer.pug 
+        //- .loading_page
+        //-     .loading_animation
+        //-         .inner_circle 0%
+        //-     .bg
+        //-         .overlay
+        //-         .overlay
+        //-         .overlay
+        //-         .overlay
+        //-         .overlay
+        //-         .overlay
+        //-         .overlay
+        //-         .overlay
+        //-         .overlay
+        //-         .overlay
+        script(src="script/common.js")
+

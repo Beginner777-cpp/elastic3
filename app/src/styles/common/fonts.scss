@@ -1,0 +1,83 @@
+@font-face{
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/Open_Sans/OpenSans-Regular.woff2') rel= preload;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/Open_Sans/OpenSans-Bold.woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'OpenSans-Light';
+    src: url('../fonts/Open_Sans/OpenSans-Light.woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'OpenSans-SemiBold';
+    src: url('../fonts/Open_Sans/OpenSans-SemiBold.woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Robot-Regular';
+    src: url('../fonts/Roboto/Roboto-Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Robot-Bold';
+    src: url('../fonts/Roboto/Roboto-Bold.woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FontAwesome Brands';
+    src: url('../fonts/FontAwesome/fa-brands-400.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'FontAwesome Duotone';
+    src: url('../fonts/FontAwesome/fa-duotone-900.woff2');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'FontAwesome Light';
+    src: url('../fonts/FontAwesome/fa-light-300.woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/FontAwesome/fa-regular-400.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'FontAwesome Solid';
+    src: url('../fonts/FontAwesome/fa-solid-900.woff2');
+    font-weight: 900;
+}
+
+.fad {
+    font-family: 'FontAwesome Duotone';
+    font-style: normal;
+    font-weight: 900;
+}
+.fab{
+    font-family: 'FontAwesome Brands';
+    font-style: normal;
+    font-weight: 400;
+}
+.fa,
+.fas,
+.fal,
+.far {
+    font-family: 'FontAwesome';
+    font-style: normal;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet" href="../styles/main.min.css")
+    body
+        header.header.book_header
+            .container
+                nav.header_nav
+                    a.logo(href="../index.html")
+                        img(src="../images/logo.webp" alt="")
+                    a.header_burger(href="#!")
+                        span
+                    ul.header_nav_list
+                        li
+                            a.header_list_link(href="../index.html") Home
+                        li
+                            a.header_list_link(href="book.html") Book
+                        li 
+                            a.header_list_link(href="contact.html") Contact
+                        li
+                            a.header_list_link.active(href="about.html") About
+        main.contact_main.about_main  
+            .container.contact_content
+                .contact_left
+                    .contact_logo
+                        img(src="../images/logo_large.webp" class="contact_logo-img" alt="")
+                    ul.page_contacts
+                        li
+                            a(class="page_contacts_link" href="#!")
+                                i(class="fab icon-behanse")
+                        li
+                            a(class="page_contacts_link" href="#!")
+                                i(class="fab icon-facebook")
+                        li
+                            a(class="page_contacts_link" href="#!")
+                                i(class="fab icon-insta")
+                .contact_right.about_right
+                    .contact_title About
+                    p.about_text.
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit. Non nunc eleifend id pulvinar. 
+                        Id pretium feugiat dignissim quisque. 
+                        Duis purus tellus duis nunc rhoncus, ultrices 
+                        id in ipsum. Eget sit tempor habitant id turpis 
+                        imperdiet ut. 
+                    p.about_text
+                        |If you are looking to make enquiries, 
+                        |kindly 
+                        a(href="contact.html") contact 
+                        |us or make your booking 
+                        a(href="book.html") here.

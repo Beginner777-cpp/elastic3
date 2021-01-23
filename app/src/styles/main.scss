@@ -1,0 +1,247 @@
+@import 'common/fonts.scss';
+@import 'common/root.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.main_body{
+    background: black;
+}
+.icon {
+
+
+    &-facebook::before {
+        content: '\f39e';
+        font-size: 16px;
+        color: black;
+
+    }
+
+    &-insta::before {
+        content: '\f16d';
+        font-size: 16px;
+        color: black;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: white;
+    }
+
+    &-behanse::before {
+        content: '\f1b4';
+        font-size: 16px;
+        color: black;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: white;
+    }
+
+    &-down::before {
+        content: '\f107';
+        font-size: 25px;
+        color: white;
+    }
+
+    &-up::before {
+        content: '\f106';
+        font-size: 25px;
+        color: white;
+    }
+
+    &-phone::before {
+        content: '\f8d3';
+        font-size: 16px;
+        color: white;
+    }
+
+    &-location::before {
+        content: '\f3c5';
+        font-size: 16px;
+        color: white;
+    }
+
+    &-mail::before {
+        content: '\f0e0';
+        font-size: 16px;
+        color: white;
+    }
+
+    &-arrowRight::before {
+        content: '\f178';
+        font-size: 35px;
+        color: white;
+        margin-left: 22px;
+    }
+
+}
+
+/*==================================== carousel ===================================*/
+
+button {
+    background: none;
+    border: none;
+}
+button:hover {
+    cursor: pointer;
+}
+.carousel {
+    position: relative;
+}
+.carousel_pages {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.carousel_page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
+    transition: 1s linear;
+}
+.carousel_page.active {
+    
+}
+
+.carousel_indicators {
+    position: fixed;
+    right: 1%;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.indicator {
+    width: 18px;
+    height: 18px;
+    background: grey;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    transition: 1s;
+    border: 2px solid transparent;
+}
+
+.indicator:hover {
+    cursor: pointer;
+    background: rgb(70, 68, 68);
+}
+
+.indicator.active {
+    background: black;
+    border: 2px solid rgb(153, 151, 151);
+}
+.indicator:focus{
+    outline: none;
+}
+.prev_btn {
+    margin-bottom: 5px;
+}
+
+.prev_btn::before {
+    content: "\f106";
+    color: white;
+    font-size: 25px;
+}
+
+.next_btn::before {
+    content: "\f107";
+    color: white;
+    font-size: 25px;
+}
+
+/*==================================== /carousel ===================================*/
+
+.loading_page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading_animation {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(286deg, rgba(2, 0, 36, 1) 0%, rgba(108, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    animation: loading 2s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    transition: 1s;
+}
+
+.inner_circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    animation: loading-after 2s linear infinite;
+    font-size: 30px;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+}
+
+.overlay {
+    width: 10%;
+    height: 100%;
+    background: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: 1s;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading-after {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@import 'layout/header.scss';
+@import 'layout/main.scss';
+@import 'layout/footer.scss';
+@import 'pages/book.scss';
+@import 'pages/about.scss';
+@import 'pages/contact.scss';
+@import 'common/media.scss';

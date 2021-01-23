@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.min.css"/>
+  </head>
+  <body>
+    <header class="header book_header">
+      <div class="container">
+        <nav class="header_nav"><a class="logo" href="../index.html"><img src="../images/logo.webp" alt=""/></a><a class="header_burger" href="#!"><span></span></a>
+          <ul class="header_nav_list">
+            <li><a class="header_list_link" href="../index.html">Home</a></li>
+            <li><a class="header_list_link active" href="book.html">Book</a></li>
+            <li> <a class="header_list_link" href="contact.html">Contact</a></li>
+            <li><a class="header_list_link" href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="book_main">
+      <form class="book_form" action="">
+        <h1 class="book_title">Welcome to the booking page!</h1>
+        <p class="book_text">Kindly provide necessary informations by attending to the questions below.</p>
+        <section class="book_options">
+          <h1 class="options_title">What you booking for? </h1>
+          <p class="options_text">(you can select multiple options)</p>
+          <div class="options_items">
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Engagement"/>
+              <label class="checkbox_text" for="Engagement">Engagement</label>
+            </div>
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Business event"/>
+              <label class="checkbox_text" for="Business event">Business event</label>
+            </div>
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Wedding"/>
+              <label class="checkbox_text" for="Wedding">Wedding</label>
+            </div>
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Birthday"/>
+              <label class="checkbox_text" for="Birthday">Birthday</label>
+            </div>
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Maternity"/>
+              <label class="checkbox_text" for="Maternity">Maternity</label>
+            </div>
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Graduation"/>
+              <label class="checkbox_text" for="Graduation">Graduation</label>
+            </div>
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Product"/>
+              <label class="checkbox_text" for="Product">Product</label>
+            </div>
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Honeymoon"/>
+              <label class="checkbox_text" for="Honeymoon">Honeymoon</label>
+            </div>
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Fashion"/>
+              <label class="checkbox_text" for="Fashion">Fashion</label>
+            </div>
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Anniversary"/>
+              <label class="checkbox_text" for="Anniversary">Anniversary</label>
+            </div>
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Food"/>
+              <label class="checkbox_text" for="Food">Food</label>
+            </div>
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Conference"/>
+              <label class="checkbox_text" for="Conference">Conference</label>
+            </div>
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Team and workspace"/>
+              <label class="checkbox_text" for="Team and workspace">Team and workspace</label>
+            </div>
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Personal Potrait"/>
+              <label class="checkbox_text" for="Personal Potrait">Personal Potrait</label>
+            </div>
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Family"/>
+              <label class="checkbox_text" for="Family">Family</label>
+            </div>
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Travel shoot"/>
+              <label class="checkbox_text" for="Travel shoot">Travel shoot</label>
+            </div>
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Baby"/>
+              <label class="checkbox_text" for="Baby">Baby</label>
+            </div>
+            <div class="checkbox_div">
+              <input class="checkbox" type="checkbox" id="Others"/>
+              <label class="checkbox_text" for="Others">Others</label>
+            </div>
+          </div>
+        </section>
+        <section class="book_date">
+          <h1 class="date_title">When and where is the photoshoot?</h1>
+          <div class="date_inputs">
+            <div class="date_input">
+              <input type="text" id="date" placeholder="Select date" required="required" onfocus="(this.type='date')" onblur="(this.type='text')"/>
+              <label for="date">Date</label>
+            </div>
+            <div class="date_input">
+              <input type="text" id="time" placeholder="Select time" required="required" onfocus="(this.type='time')" onblur="(this.type='text')"/>
+              <label for="time">Time</label>
+            </div>
+            <div class="date_input">
+              <input type="text" id="address" placeholder="Enter the location address"/>
+              <label for="address">Address</label>
+            </div>
+          </div>
+        </section>
+        <section class="book_packages">
+          <h1 class="packages_title">Select your preffered package</h1>
+          <div class="packages_items">
+            <div class="packages_item">
+              <h1 class="packages_item-title">Basic</h1>
+              <div class="price"> <img src="../images/currency.webp" alt=""/>30,000</div>
+              <div class="packages_text">1 hour shoot</div>
+              <div class="packages_text">Unlimited photos</div>
+              <div class="packages_text">Editing included</div><a class="select_btn" href="#!" text="Basic">Select</a>
+            </div>
+            <div class="packages_item">
+              <h1 class="packages_item-title">Standard</h1>
+              <div class="price"> <img src="../images/currency.webp" alt=""/>50,000</div>
+              <div class="packages_text">1 hour shoot</div>
+              <div class="packages_text">Unlimited photos</div>
+              <div class="packages_text">Editing included</div><a class="select_btn" href="#!" text="Standard">Select</a>
+            </div>
+            <div class="packages_item">
+              <h1 class="packages_item-title">Premium</h1>
+              <div class="price"> <img src="../images/currency.webp" alt=""/>80,000</div>
+              <div class="packages_text">1 hour shoot</div>
+              <div class="packages_text">Unlimited photos</div>
+              <div class="packages_text">Editing included</div><a class="select_btn" href="#!" text="Premium">Select</a>
+            </div>
+          </div>
+        </section>
+        <section class="book_date">
+          <h1 class="date_title">Kindly provide your contact details</h1>
+          <div class="date_inputs">
+            <div class="date_input">
+              <input type="text" id="name" placeholder="Enter full name" required="required"/>
+              <label for="name">Name</label>
+            </div>
+            <div class="date_input">
+              <input type="tel" id="phone" placeholder="Enter phone number" required="required"/>
+              <label for="phone">Phone number</label>
+            </div>
+            <div class="date_input">
+              <input type="email" id="email" placeholder="Enter email address" required="required"/>
+              <label for="email">Email</label>
+            </div>
+          </div>
+        </section>
+        <div class="book_btns"><a class="book_btn" href="#!" id="book_now">Book now </a><a class="book_btn bookLater_btn" href="#!" id="book_later">Save and book later</a></div>
+      </form>
+    </main>
+    <script src="../script/book.js"></script>
+  </body>
+</html>
