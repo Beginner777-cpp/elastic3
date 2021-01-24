@@ -180,36 +180,6 @@ class Slider {
     }
 
     move(btn) {
-        // if (btn == this.prevBtn && this.activePage > 0) {
-        //     this.pages[this.activePage].style.transition = `1s`;
-        //     this.pages[this.activePage].classList.remove('active');
-        //     this.activePage--;
-        //     for (let i = 0; i < this.pages.length; i++) {
-        //         if (i > this.activePage) {
-        //             this.pages[i].style.transform = `translateY(${this.pageHeight}px)`;
-        //         }
-        //     }
-        //     this.pages[this.activePage].style.transition = `1s`;
-        //     this.pages[this.activePage].style.transform = `translateY(0)`;
-        //     this.pages[this.activePage].classList.add('active');
-        //     this.checkIndicator();
-        // } else if (btn == this.nextBtn && this.activePage < this.pages.length - 1) {
-        //     this.pages[this.activePage].classList.remove('active');
-        //     this.pages[this.activePage].style.transition = `1s`;
-        //     this.activePage++;
-        //     for (let i = 0; i < this.pages.length; i++) {
-        //         if (i < this.activePage) {
-        //             this.pages[i].style.transform = `translateY(${-this.pageHeight}px)`;
-        //         }
-        //     }
-        //     this.pages[this.activePage].style.transition = `1s`;
-        //     this.pages[this.activePage].style.transform = `translateY(0)`;
-        //     this.pages[this.activePage].classList.add('active');
-        //     this.checkIndicator();
-        // }
-        // this.topPageCheck();
-        // lastPageChecker();
-
         if (btn == this.prevBtn && this.activePage > 0) {
             for (let i = 0; i < this.pages.length; i++) {
                 this.pages[i].style.transform = `translateY(${-(this.activePage - 1) * this.pageHeight}px)`;
@@ -225,9 +195,7 @@ class Slider {
         }
         this.topPageCheck();
         lastPageChecker();
-
     }
-
     checkIndicator() {
         for (let i = 0; i < this.indicators.length; i++) {
             this.indicators[i].classList.remove('active');
@@ -242,7 +210,6 @@ class Slider {
             this.nextBtn.disabled = false;
             this.nextBtn.disabled = false;
         }
-
     }
     disableIndicators(checker) {
         if (checker == true) {
@@ -267,14 +234,11 @@ class Slider {
             header.style.backdropFilter = 'blur(5px)';
         }
     }
-
 }
 
 const slider1 = new Slider({
     slider: '.carousel',
-
 })
-
 /*============================================== burger ========================================*/
 var burger_icon = document.querySelector('.header_burger');
 var header_list = document.querySelectorAll('.header_nav_list');
@@ -350,36 +314,37 @@ back_btn.addEventListener('click', () => {
 })
 
 /*=================================================== Loading page ===========================================*/
-// const loading_page = document.querySelector('.loading_page');
-// const overlays = document.querySelectorAll('.overlay');
-// const loading_animation = document.querySelector('.loading_animation');
-// const percentage = document.querySelector('.inner_circle');
-// // window.addEventListener('load', onLoad)
-// function onLoad() {
-//     let i = 0;
-//     main_body.style.overflow = 'hidden';
-//     var interval = setInterval(() => {
-//         percentage.innerHTML = `${++i}%`;
-//         if (i == 100) {
-//             clearInterval(interval);
-//             loading_animation.style.opacity = 0;
-//             for (let i = 0; i < overlays.length; i++) {
-//                 setTimeout(() => {
-//                     if (i % 2 == 0) {
-//                         overlays[i].style.transform = 'translateY(-200%)';
-//                     } else {
-//                         overlays[i].style.transform = 'translateY(200%)';
-//                     }
-//                 }, 100 * i);
-//             }
-//         }
-//     }, 20);
-// }
-// setTimeout(() => {
-//     loading_page.style.display = 'none';
-//     main_body.style.overflow = 'visible';
-// }, 3500)
-// onLoad();
+const loading_page = document.querySelector('.loading_page');
+const overlays = document.querySelectorAll('.overlay');
+const loading_animation = document.querySelector('.loading_animation');
+const percentage = document.querySelector('.inner_circle');
+function onLoad() {
+    slider1.flag = false;
+    let i = 0;
+    main_body.style.overflow = 'hidden';
+    var interval = setInterval(() => {
+        percentage.innerHTML = `${++i}%`;
+        if (i == 100) {
+            clearInterval(interval);
+            loading_animation.style.opacity = 0;
+            for (let i = 0; i < overlays.length; i++) {
+                setTimeout(() => {
+                    if (i % 2 == 0) {
+                        overlays[i].style.transform = 'translateY(-200%)';
+                    } else {
+                        overlays[i].style.transform = 'translateY(200%)';
+                    }
+                }, 100 * i);
+            }
+        }
+    }, 20);
+}
+setTimeout(() => {
+    loading_page.style.display = 'none';
+    main_body.style.overflow = 'visible';
+    slider1.flag = true;   
+}, 3500)
+onLoad();
 
 /*==================================================== /Loading page ==========================================*/
 
