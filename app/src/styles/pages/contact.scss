@@ -32,9 +32,11 @@
     color: #FFFFFF;
     margin-bottom: 30px;
 }
-.contact_form{
+
+.contact_form {
     width: 100%;
 }
+
 .contact_form label {
     font-family: 'OpenSans-Regular';
     font-size: 25px;
@@ -53,6 +55,7 @@
     margin-bottom: 30px;
     color: white;
     font-size: 20px;
+    font-family: 'OpenSans-Regular';
 }
 
 .contact_form textarea {
@@ -62,9 +65,23 @@
     border: 2px solid #FFFFFF;
     border-radius: 5px;
     margin-bottom: 50px;
+    padding: 16px;
     color: white;
     font-size: 20px;
+    font-family: 'OpenSans-Regular';
 
+}
+
+.contact_form input::placeholder {
+    color: #E4E4E4;
+    font-size: 20px;
+    font-family: 'OpenSans-Regular';
+}
+
+.contact_form textarea::placeholder {
+    color: #E4E4E4;
+    font-size: 20px;
+    font-family: 'OpenSans-Regular';
 }
 
 .submit_div {
@@ -95,18 +112,21 @@
     padding: 19px 44px;
     display: inline-block;
 }
-.contacts_bottom{
+
+.contacts_bottom {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-.contacts_bottom a{
+
+.contacts_bottom a {
     color: white;
     margin-bottom: 20px;
     font-family: 'OpenSans-Regular';
     font-size: 20px;
     text-align: right;
 }
-.contacts_bottom a i{
+
+.contacts_bottom a i {
     margin-left: 15px;
 }

@@ -61,7 +61,8 @@ html(lang="en")
                             .packages_text 1 hour shoot
                             .packages_text Unlimited photos
                             .packages_text Editing included
-                            a(href="#!" class="select_btn" text="Basic") Select
+                            input(id = "basic" class="select_btn" type="radio" text="Basic" name="Select")
+                            label(for="basic") Select
                         .packages_item
                             h1.packages_item-title Standard
                             .price 
@@ -70,7 +71,8 @@ html(lang="en")
                             .packages_text 1 hour shoot
                             .packages_text Unlimited photos
                             .packages_text Editing included
-                            a(href="#!" class="select_btn" text="Standard") Select
+                            input(class="select_btn" id="standart" type="radio" text="Standard" name="Select")
+                            label(for="standart") Select
                         .packages_item
                             h1.packages_item-title Premium
                             .price 
@@ -79,7 +81,8 @@ html(lang="en")
                             .packages_text 1 hour shoot
                             .packages_text Unlimited photos
                             .packages_text Editing included
-                            a(href="#!" class="select_btn" text="Premium") Select
+                            input(class="select_btn" id="premium" type="radio" text="Premium" name="Select")
+                            label(for="premium") Select
                 section.book_date
                     h1.date_title Kindly provide your contact details
                     .date_inputs

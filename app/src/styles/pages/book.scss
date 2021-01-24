@@ -111,17 +111,14 @@
     top: -7px;
     left: 40px;
     opacity: 0;
-    
+    transition: 0.5s;
 }
 
-.date_input input:focus{
+.date_input input:focus {
     outline: none;
 }
-.date_input input:focus ~label{
-    transition: 0.5s;
-    opacity: 1;
-}
-.date_input{
+
+.date_input {
     position: relative;
     width: 30%;
     margin: 0 25px;
@@ -132,9 +129,10 @@ input {
     height: 56px;
     border: 2px solid #CCAF40;
     padding: 16px;
-    
+
 }
-input[type="date"]::-webkit-calendar-picker-indicator{
+
+input[type="date"]::-webkit-calendar-picker-indicator {
     color: rgba(0, 0, 0, 0);
     opacity: 1;
     display: block;
@@ -144,7 +142,8 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     height: 20px;
     border-width: thin;
 }
-input[type="time"]::-webkit-calendar-picker-indicator{
+
+input[type="time"]::-webkit-calendar-picker-indicator {
     color: rgba(0, 0, 0, 0);
     opacity: 1;
     display: block;
@@ -154,6 +153,7 @@ input[type="time"]::-webkit-calendar-picker-indicator{
     height: 20px;
     border-width: thin;
 }
+
 .packages_title {
     font-family: 'OpenSans-SemiBold';
     font-size: 24px;
@@ -216,15 +216,33 @@ input[type="time"]::-webkit-calendar-picker-indicator{
     padding: 9px 27px;
     background: #CCAF40;
     border-radius: 5px;
-    display: block;
     width: fit-content;
     margin: 0 auto;
     margin-top: 50px;
     border: 2px solid transparent;
+    display: none;
 
 }
 
-.select_btn.clicked {
+.select_btn~label {
+    font-family: 'OpenSans-SemiBold';
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 9px 27px;
+    background: #CCAF40;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 2px solid transparent;
+    display: block;
+    user-select: none;
+    cursor: pointer;
+}
+
+.select_btn:checked~label {
     color: black;
     background: transparent;
     border: 2px solid #CCAF40;
