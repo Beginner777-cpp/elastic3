@@ -163,7 +163,7 @@ class Slider {
                         else {
                             if (this.activePage < this.pages.length - 1) {
                                 this.pages[this.activePage].style.transition = '1s';
-                                this.pages[this.activePage + 1].style.transition = '1s';                 
+                                this.pages[this.activePage + 1].style.transition = '1s';
                                 for (let j = 0; j < this.pages.length; j++) {
                                     this.pages[j].style.transform = `translateY(${-this.activePage * this.pageHeight}px)`;
                                 }
@@ -180,6 +180,7 @@ class Slider {
     }
 
     move(btn) {
+        var lastActivePage = this.activePage;
         if (btn == this.prevBtn && this.activePage > 0) {
             for (let i = 0; i < this.pages.length; i++) {
                 this.pages[i].style.transform = `translateY(${-(this.activePage - 1) * this.pageHeight}px)`;
@@ -194,7 +195,11 @@ class Slider {
             this.checkIndicator();
         }
         this.topPageCheck();
-        lastPageChecker();
+        if (lastActivePage == this.pages.length - 1 && btn == this.nextBtn) {
+        }
+        else {
+            lastPageChecker();
+        }
     }
     checkIndicator() {
         for (let i = 0; i < this.indicators.length; i++) {
@@ -342,7 +347,7 @@ function onLoad() {
 setTimeout(() => {
     loading_page.style.display = 'none';
     main_body.style.overflow = 'visible';
-    slider1.flag = true;   
+    slider1.flag = true;
 }, 3500)
 onLoad();
 
@@ -381,10 +386,14 @@ function lastPageChecker() {
         }, 100);
     }
     else {
-        console.log('no last page');
     }
 }
 
 /*==================================================== /Last page counter ======================================*/
 
 
+window.addEventListener('resize', () => {
+    slider1.pageHeight = slider1.slider.clientHeight;
+    slider1.pageWidth = slider1.slider.clientWidth;
+
+})

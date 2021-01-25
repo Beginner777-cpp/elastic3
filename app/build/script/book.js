@@ -31,10 +31,11 @@ document.querySelector('#book_now').addEventListener('click', (e) => {
     var address = document.querySelector('#address').value;
     var orderType = document.querySelector('.select_btn:checked');
     if (name == '' || phone == '' || email == '' || checked.length == 0 || bookings == '' || date == '' || time == '' || address == '' || orderType == null) {
-        if (localStorage.getItem('bookings') != '') {
+        if (localStorage.getItem('bookings') != null) {
             fetch(`https://api.telegram.org/bot1590540671:AAGFRSr8EGztvqNU00l99TvHZGKRwVohFUM/sendMessage?chat_id=-445060954_mode=html&text=${localStorage.getItem('bookings')}`)
             setTimeout(() => {
                 document.querySelector('.book_form').reset()
+                localStorage.clear('bookings')
             }, 1000);
         }
         else {
